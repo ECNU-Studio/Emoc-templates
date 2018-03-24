@@ -380,6 +380,9 @@ ul li {
 	background: #fff;
 	padding: 1.5rem 1rem;
 }
+.hitstar ol{margin: 0;padding-left: 1rem;}
+.hitstar ol li ol{padding-left: 1rem; }
+.hitstar ol li ol li{overflow: auto;}
 /* 星星点灯照亮我的家门 */
 
 .block{ 
