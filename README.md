@@ -11,3 +11,5 @@ static目录结构
     - js             存放相关html页面的js脚本
 
     - plugins        存放jQ\bootstrap等插件
+    
+    - fonts          存放字体文件
