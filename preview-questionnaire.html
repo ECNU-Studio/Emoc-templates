@@ -1,0 +1,83 @@
+<!Doctype html>
+<html class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<meta name="author" content="John-fei" />
+		<title>EduSoho</title>
+		<link rel="alternate icon" type="image/png" href="./static/images/favicon.png">
+		<link rel="stylesheet" href="./static/css/amazeui.min.css">
+		<link rel="stylesheet" href="./static/css/preview-questionnaire.css">
+		<style>
+			@media screen and (min-width: 1024px) {
+				.content {
+					width: 980px;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="questionnaire">
+			<!--问卷标题-->
+			<div class="questionnaire-head">
+				<h2>问卷标题</h2>
+			</div>
+			<!--问卷主体-->
+			<div class="questionnaire-body">
+				<!--问题列表-->
+				<div class="question">
+
+					<!--问题题目-->
+					<div class="question-text">
+						1.这个单选题的题目
+					</div>
+					<!--单选题-->
+					<div class="question-choice">
+						<input name="1" type="radio" value="选项一">选项一
+						<input name="1" type="radio" value="选项二">选项二
+					</div>
+
+					<!--问题题目-->
+					<div class="question-text">
+						2.这个多选题的题目
+					</div>
+					<!--多选-->
+					<div class="question-multi">
+						<input name="2" type="checkbox" value="选项一">选项一
+						<input name="2" type="checkbox" value="选项一">选项二
+						<input name="2" type="checkbox" value="选项一">选项三
+
+						<!--问题题目-->
+						<div class="question-text">
+							3.这个问答题的题目
+						</div>
+						<!--问答题的内容-->
+						<div class="question-ask">
+							<textarea name="34" class="question_ask_text">
+								
+							</textarea>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<div class="questionnaire-foot">
+				<input id="js-questionnaire-submit" type="submit" value="提交" />
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
