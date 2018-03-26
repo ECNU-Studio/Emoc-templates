@@ -3,6 +3,8 @@
 static目录结构
 
     - css            用于存放相关html页面的css样式
+    
+        - public.css 用于存放公共头部尾部样式
 
     - images         存放图片
 
