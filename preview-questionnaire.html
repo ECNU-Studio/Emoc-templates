@@ -13,7 +13,6 @@
   <title>EduSoho</title>
   <link rel="alternate icon" type="image/png" href="./static/images/favicon.png">
   <link rel="stylesheet" href="./static/css/amazeui.min.css">
-  <link rel="stylesheet" href="./static/css/public.css">
   <link rel="stylesheet" href="./static/css/preview-questionnaire.css">
   <style>
     @media screen and (min-width: 1024px) {
@@ -24,69 +23,7 @@
   </style>
 </head>
 <body>
-  <!-- 头部导航 -->
-  <header class="m-header">
-    <!-- PC端显示样式 -->
-    <section class="am-show-md-up" data-am-sticky>
-      <div class="am-g">
-        <!-- Logo -->
-        <div class=" am-u-sm-2 am-u-md-1 am-fl">
-          <a href="/" rel="nofollow" class="m-logo"><i class="am-icon-spinner"></i>EduSoho</a>
-        </div>
-        <!-- 页面标题 -->
-        <div class="am-u-sm-5 am-u-md-5 am-u-lg-3 am-u-md-centered am-g-fixed page-title">
-          <h1>预览问卷</h1>
-        </div>
 
-        <div class="am-u-sm-5 am-u-md-4 am-u-lg-2 m-info" >
-          <div class="change">En</div>
-          <div class="news">
-            <i>X</i>
-            <span class="news-tip">3</span>
-          </div>
-          <div class="avatar am-dropdown" data-am-dropdown>
-            <a href="#" class="am-dropdown-toggle" data-am-dropdown-toggle><img src="./static/images/common/avatar.png" alt="avatar"></a>
-            <ul class="am-dropdown-content m-dropdown">
-              <li><a href="#"><span class="am-icon-user-secret am-icon-sm am-icon-fw">&nbsp&nbsp个人中心</span></a></li>
-              <li><a href="#"><span class="am-icon-gear am-icon-sm am-icon-fw">&nbsp&nbsp管理后台</span></a></li>
-              <li><a href="#"><span class="am-icon-sign-out am-icon-sm am-icon-fw">&nbsp&nbsp退出</span></a></li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </section>
-    <!-- 移动端显示样式 -->
-    <section class="am-header am-header-primary am-show-sm-only" data-am-widget="header">
-      <nav data-am-widget="header" class="am-header am-show-sm-only">
-            <h1 class="am-header-left">
-              <a href="/" rel="nofollow"><img src="./static/images/favicon.png" alt="logo"></a>
-            </h1>
-            <div class="am-header-right am-header-nav">
-              <a href="#right-link" class="" data-am-offcanvas="{target: '#r-nav',effect: 'push'}">
-                <i class="am-header-icon am-icon-bars"></i>
-              </a>
-            </div>
-      </nav>
-      <!-- 侧边栏内容 -->
-      <div id="r-nav" class="am-offcanvas">
-        <div class="am-offcanvas-bar am-offcanvas-bar-flip">
-          <nav class="am-offcanvas-content">
-              <a href="/" rel="nofollow"><span class="logo"></span></a>
-              <p><i class="am-icon-home"></i> <a href="/" rel="nofollow">通知</a></p>
-              <p><i class="am-icon-desktop"></i> <a href="/anli.html" rel="nofollow">语言</a></p>
-              <p><i class="am-icon-cogs"></i> <a href="/fuwu.html" rel="nofollow">退出</a></p>
-          </nav>
-        </div>
-      </div>
-    </section>
-  </header>
-  <!-- 预览问卷路径 -->
-  <div class="path am-hide-sm-only" style="display: none!important;">
-    <div class="am-container content">
-      <a href="#">管理课程</a>><span>预览问卷</span>
-    </div>
-  </div>
   <!-- 预览问卷的body -->
   <section>
     <div class="am-container content">
@@ -100,8 +37,7 @@
         <div class="problem-set">
           <!-- 第一题 -->
           <div class="item">
-            <div class="am-form-group">
-              <label for="single-question">如果你有30万你是选择买房还是买车？</label><br>
+              <label for="single-question">如果你有30万你是选择买房还是买车？</label>
               <!-- 第一个选项 -->
               <div class="am-radio">
                 <label for="single-question-1"><input type="radio" id="single-question-1" name="single-questiono1" value="option1">单选框 - 选项一</label>
@@ -110,7 +46,6 @@
               <div class="am-radio">
                 <label for="single-question-2"><input type="radio" id="single-question-2" name="single-questiono" value="option2">单选框 - 选项二</label>
               </div>
-            </div>
           </div>
           <!-- 第二题 -->
           <div class="item">
@@ -172,51 +107,10 @@
             </div>
         </div>
       </div>
-      <!-- 完成按钮 -->
-      <div class="content" style="margin:2rem 0;" >
-        <button class="am-btn am-btn-primary am-center">完成</button>
-      </div>
+      
     </div>
   </section>
   
-  <footer data-am-widget="footer" class="am-footer am-footer-default" data-am-footer="{}">
-    <div class="am-footer-switch">
-    <span class="am-footer-ysp" data-rel="mobile"
-          data-am-modal="{target: '#am-switch-mode'}">
-          云适配版
-    </span>
-      <span class="am-footer-divider"> | </span>
-      <a id="godesktop" data-rel="desktop" class="am-footer-desktop" href="javascript:">
-          电脑版
-      </a>
-    </div>
-    <div class="am-footer-miscs ">
-
-          <p>由 <a href="http://www.yunshipei.com/" title="五润科技" target="_blank" class="">五润科技</a>
-            提供技术支持</p>
-        <p>CopyRight©2014  AllMobilize Inc.</p>
-        <p>京ICP备13033158</p>
-    </div>
-  </footer>
-
-  <div id="am-footer-modal" class="am-modal am-modal-no-btn am-switch-mode-m am-switch-mode-m-default">
-    <div class="am-modal-dialog">
-      <div class="am-modal-hd am-modal-footer-hd">
-        <a href="javascript:void(0)" data-dismiss="modal" class="am-close am-close-spin " data-am-modal-close>&times;</a>
-      </div>
-      <div class="am-modal-bd">
-          您正在浏览的是
-
-        <span class="am-switch-mode-owner">
-            云适配
-        </span>
-
-        <span class="am-switch-mode-slogan">
-              为您当前手机订制的移动网站。
-        </span>
-      </div>
-    </div>
-  </div>
 
   <!--[if (gte IE 9)|!(IE)]><!-->
   <script src="./static/plugins/jquery.min.js"></script>
