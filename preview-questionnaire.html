@@ -83,7 +83,7 @@
   </header>
   <!-- 预览问卷路径 -->
   <div class="path am-hide-sm-only" style="display: none!important;">
-    <div class="am-container">
+    <div class="am-container content">
       <a href="#">管理课程</a>><span>预览问卷</span>
     </div>
   </div>
@@ -95,132 +95,84 @@
         <h2 class="am-vertical-align-middle">我是一个问卷的标题</h2>
       </div>
       <!-- 问卷的内容 -->
-      <!-- 单选题 -->
-      <div class="single-question am-animation-slide-left">
-        <div class="am-form">
-          <!-- 题目类型 -->
-          <legend>单选题</legend>
-          <!-- 题目列表 -->
-          <ol>
-            <!-- 单选第一题 -->
-            <li>
+      <div class="am-form subject">
+        <!-- 题目列表 -->
+        <div class="problem-set">
+          <!-- 第一题 -->
+          <div class="item">
+            <div class="am-form-group">
               <label for="single-question">如果你有30万你是选择买房还是买车？</label><br>
               <!-- 第一个选项 -->
-              <div class="am-radio-inline">
-                <label for="single-question-1"><input type="radio" id="single-question-1" name="single-questiono" value="option1">单选框 - 选项一</label>
+              <div class="am-radio">
+                <label for="single-question-1"><input type="radio" id="single-question-1" name="single-questiono1" value="option1">单选框 - 选项一</label>
               </div>
               <!-- 第二个选项 -->
-              <div class="am-radio-inline">
+              <div class="am-radio">
                 <label for="single-question-2"><input type="radio" id="single-question-2" name="single-questiono" value="option2">单选框 - 选项二</label>
               </div>
-            </li>
-            <!-- 单选第二题 -->
-            <li>
-              <label for="single-question">如果你有30万你是选择买房还是买车？</label><br>
-              <!-- 第一个选项 -->
-              <div class="am-radio-inline">
-                <label for="single-question-1"><input type="radio" id="single-question-1" name="single-questiono" value="option1">单选框 - 选项一</label>
-              </div>
-              <!-- 第二个选项 -->
-              <div class="am-radio-inline">
-                <label for="single-question-2"><input type="radio" id="single-question-2" name="single-questiono" value="option2">单选框 - 选项二</label>
-              </div>
-            </li>
-          </ol>
-
-        </div>
-      </div>
-      <!-- 多选题 -->
-      <div class="multiple-question am-animation-slide-right">
-        <div class="am-form">
-
-          <legend>多选题</legend>
-
-          <ol>
-
-            <li>
-              <label for="multiple-question">现在你梦想拥有什么？</label><br>
-              <div class="am-checkbox-inline">
-                <label for="multiple-question-1"><input type="checkbox" name="multiple-question-1" value="multiple-question-1">车子</label>
-              </div>
-              <div class="am-checkbox-inline">
-                <label for="multiple-question-1"><input type="checkbox" name="multiple-question-1" value="multiple-question-1">房子</label>
-              </div>
-              <div class="am-checkbox-inline">
-                <label for="multiple-question-1"><input type="checkbox" name="multiple-question-1" value="multiple-question-1">妹子</label>
-              </div>
-              <div class="am-checkbox-inline">
-                <label for="multiple-question-1"><input type="checkbox" name="multiple-question-1" value="multiple-question-1">都想要</label>
-              </div>
-            </li>
-
-            <li>
-              <label for="multiple-question">现在你梦想拥有什么？</label><br>
-              <div class="am-checkbox-inline">
-                <label for="multiple-question-1"><input type="checkbox" name="multiple-question-1" value="multiple-question-1">车子</label>
-              </div>
-              <div class="am-checkbox-inline">
-                <label for="multiple-question-1"><input type="checkbox" name="multiple-question-1" value="multiple-question-1">房子</label>
-              </div>
-              <div class="am-checkbox-inline">
-                <label for="multiple-question-1"><input type="checkbox" name="multiple-question-1" value="multiple-question-1">妹子</label>
-              </div>
-              <div class="am-checkbox-inline">
-                <label for="multiple-question-1"><input type="checkbox" name="multiple-question-1" value="multiple-question-1">都想要</label>
-              </div>
-            </li>
-
-          </ol>
-
-        </div>
-      </div>
-      <!-- 问答题 -->
-      <div class="txt-question am-animation-slide-left">
-        <div class="am-form">
-
-          <legend>问答题</legend>
-
-          <div class="am-form-group">
-            <label for="doc-ta-1">你喜欢我吗？请简述理由~</label>
-            <textarea class="" rows="5" id="doc-ta-1"></textarea>
+            </div>
           </div>
-
+          <!-- 第二题 -->
+          <div class="item">
+            <label for="single-question2">如果你有30万你是选择买房还是买车？</label><br>
+            <!-- 第一个选项 -->
+            <div class="am-radio">
+              <label for="single-question-3"><input type="radio" id="single-question-3" name="single-questiono" value="option3">单选框 - 选项一</label>
+            </div>
+            <!-- 第二个选项 -->
+            <div class="am-radio">
+              <label for="single-question-4"><input type="radio" id="single-question-4" name="single-questiono" value="option4">单选框 - 选项二</label>
+            </div>
+          </div>
+          <!-- 第三题 -->
+          <div class="item">
+            <label for="multiple-question">现在你梦想拥有什么？</label><br>
+            <div class="am-checkbox">
+              <label for="multiple-question-1"><input type="checkbox" name="multiple-question-1" value="multiple-question-1">车子</label>
+            </div>
+            <div class="am-checkbox">
+              <label for="multiple-question-1"><input type="checkbox" name="multiple-question-1" value="multiple-question-1">房子</label>
+            </div>
+            <div class="am-checkbox">
+              <label for="multiple-question-1"><input type="checkbox" name="multiple-question-1" value="multiple-question-1">妹子</label>
+            </div>
+            <div class="am-checkbox">
+              <label for="multiple-question-1"><input type="checkbox" name="multiple-question-1" value="multiple-question-1">都想要</label>
+            </div>
+          </div>
+          <!-- 第四题 -->
+          <div class="item">
+            <div class="am-form-group">
+              <label for="doc-ta-1">你喜欢我吗？请简述理由~</label>
+              <textarea class="" rows="5" id="doc-ta-1"></textarea>
+            </div>
+          </div>
+          <!-- 第五题 -->
+          <div class="item">
+            <label for="">请给下面的同学打分：</label>
+            <div class="problem-set">
+              <div class="item">张越
+                <div id="start1" class="block">
+                  <div  class="star_score"></div>
+                  <div class="attitude"></div>
+                </div> 
+              </div>
+              <div class="item">宗路
+                <div id="start2" class="block">
+                  <div  class="star_score"></div>
+                  <div class="attitude"></div>
+                </div> 
+              </div>
+              <div class="item">徐魁
+                <div id="start3" class="block">
+                  <div  class="star_score"></div>
+                  <div class="attitude"></div>
+                </div> 
+              </div>
+            </div>
         </div>
       </div>
-      <!-- 评价题 -->
-      <div class="hitstar am-animation-slide-right">
-        <div class="am-form">
-
-          <legend>评价题</legend>
-
-          <ol>
-            <li>
-
-              <label for="">请给下面的同学打分：</label>
-              <ol>
-                <li>张越
-                  <div id="start1" class="block">
-                    <div  class="star_score"></div>
-                    <div class="attitude"></div>
-                  </div> 
-                </li>
-                <li>宗路
-                  <div id="start2" class="block">
-                    <div  class="star_score"></div>
-                    <div class="attitude"></div>
-                  </div> 
-                </li>
-                <li>徐魁
-                  <div id="start3" class="block">
-                    <div  class="star_score"></div>
-                    <div class="attitude"></div>
-                  </div> 
-                </li>
-              </ol>
-            </li>
-          </ol>
-        </div>
-      </div>
+      <!-- 完成按钮 -->
       <div class="content" style="margin:2rem 0;" >
         <button class="am-btn am-btn-primary am-center">完成</button>
       </div>

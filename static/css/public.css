@@ -140,6 +140,13 @@ ul li {
 }
 
 .page-title h1{text-align: center;margin-top: 1rem;}
+
+.path{
+    background: #fff;
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+
 /*sidebar style*/
 #r-nav .am-offcanvas-bar {
   width: 130px;
@@ -147,6 +154,34 @@ ul li {
 #r-nav p {
   border-bottom: 1px solid #4F4F4F;
   padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 640px){
+	.m-header{padding: 0;height: auto;  }
+	.m-active{margin-top:0px;}
+	.m-active .items li{}
+	.m-course{margin-top: 1rem;}
+	.m-course-list{
+		float: left;
+		margin-left: 0rem;
+		margin-top: 0;
+	}
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+	.m-active{margin-top:40px;}
+	.m-active .item .m-active-info .m-active-name{
+		max-width: 126px;
+	}
+	.m-topic {
+		font-size: .8rem;
+	}
+	.m-topic-title{
+		width: 9rem;
+	}
+	.m-topic li{margin-bottom:1rem;}
+	.m-tab-bd{
+		height: 34rem;
+	}
 }
 
 /*因为填写问卷标题页面没有几行样式，没必要专门写一个样式表，所以样式填写问卷标题页面的样式卸载这里*/
