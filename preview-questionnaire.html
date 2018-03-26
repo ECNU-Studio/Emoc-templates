@@ -88,22 +88,19 @@
             <div class="problem-set">
               <div class="item">张越
                 <div id="start1" class="block">
-                  <div  class="star_score"></div>
-                  <div class="attitude"></div>
+                	<form data-am-rating>
+                  <input type="hidden" name="score">
+  <a class="am-padding-lg" role="button">
+<i class="am-icon-star-o"></i>
+<i class="am-icon-star-o"></i>
+<i class="am-icon-star-o"></i>
+<i class="am-icon-star-o"></i>
+<i class="am-icon-star-o"></i>
+ </a>
+ </form>
                 </div> 
               </div>
-              <div class="item">宗路
-                <div id="start2" class="block">
-                  <div  class="star_score"></div>
-                  <div class="attitude"></div>
-                </div> 
-              </div>
-              <div class="item">徐魁
-                <div id="start3" class="block">
-                  <div  class="star_score"></div>
-                  <div class="attitude"></div>
-                </div> 
-              </div>
+              
             </div>
         </div>
       </div>
@@ -123,6 +120,7 @@
   <script src="./static/plugins/amazeui.min.js"></script>
   <script src="./static/plugins/iconfont.js"></script>
   <script src="./static/plugins/starScore.js"></script>
+  <script src="static/plugins/amazeui.rating.js" ></script>
   <script>
     // 星星的显示样式
      var opts={
