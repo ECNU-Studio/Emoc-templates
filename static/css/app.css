@@ -148,6 +148,7 @@ ul li {
   padding-bottom: 20px;
 }
 
+
 /*banner style*/
 .m-banner{
 
@@ -198,6 +199,7 @@ ul li {
 	color: #095f8a;
 }
 /*newthings*/
+
 .m-panel{
 	border: 0px;
 }
@@ -358,8 +360,8 @@ ul li {
 .edit-question-title,
 .edit-question-single
 {
-	box-shadow: 0 0 1rem #ccc;
-	margin-top: 10px;
+	/*box-shadow: 0 0 1rem #ccc;*/
+	margin-top: 20px;
 }
 .preview-question-title,
 .edit-question-title{

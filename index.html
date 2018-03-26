@@ -14,6 +14,13 @@
   <link rel="alternate icon" type="image/png" href="./static/images/favicon.png">
   <link rel="stylesheet" href="./static/css/amazeui.min.css">
   <link rel="stylesheet" href="./static/css/app.css">
+  <style>
+    @media screen and (min-width:1024px) {
+      .my-panel{
+        min-height: 38rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="m-header">
@@ -95,13 +102,13 @@
     </div>
   </section>
   <section class="am-container m-active">
-    <hgroup class="am-animation-slide-bottom am-animation-delay-1" data-am-scrollspy="{animation:'slide-bottom', delay: 40}">
-      <h3 class="am-fl">活动报名</h3>
+    <hgroup class="am-animation-slide-bottom am-animation-delay-1">
+      <h2 class="am-fl">活动报名</h2>
       <a class="am-fr" href="#">查看更多</a>
       <div class="am-cf"></div>
     </hgroup>
     <div class="am-g">
-      <div class="am-u-sm-12 am-u-md-4 am-u-lg-4 am-animation-slide-top" data-am-scrollspy="{animation:'slide-top', delay: 100}">
+      <div class="am-u-sm-12 am-u-md-4 am-u-lg-4 ">
         <ul class="items">
           <li><div class="item">
             <div class="m-active-time am-fl">
@@ -149,7 +156,7 @@
           </div></li>
         </ul>
       </div>
-      <div class="am-u-sm-12 am-u-md-4 am-u-lg-4 am-animation-slide-top" data-am-scrollspy="{animation:'slide-top', delay: 20}">
+      <div class="am-u-sm-12 am-u-md-4 am-u-lg-4 ">
         <ul class="items">
           <li><div class="item am-vertical-align-middle">
             <div class="m-active-time am-fl">
@@ -197,7 +204,7 @@
           </div></li>
         </ul>
       </div>
-      <div class="am-u-sm-12 am-u-md-4 am-u-lg-4 am-animation-slide-top" data-am-scrollspy="{animation:'slide-top', delay: 300}">
+      <div class="am-u-sm-12 am-u-md-4 am-u-lg-4 ">
         <ul class="items">
           <li><div class="item">
             <div class="m-active-time am-fl">
@@ -249,7 +256,7 @@
   </section>
   <section class="am-container m-newthing">
     <hgroup class="am-animation-slide-bottom am-animation-delay-1" data-am-scrollspy="{animation:'slide-bottom', delay: 40}">
-      <h3>新鲜事</h3>
+      <h2>新鲜事</h2>
       <!-- <a class="am-fr" href="#">查看更多</a> -->
       <!-- <div class="am-cf"></div> -->
     </hgroup>
@@ -257,7 +264,7 @@
       <div class="am-u-sm-12 am-u-md-4 am-u-lg-4">
         <div class="am-panel am-panel-default m-panel">
           <div class="am-panel-hd"><div class="am-panel-title">新闻资讯</div></div>
-          <div class="am-panel-bd">
+          <div class="am-panel-bd my-panel">
             <!-- pic news -->
             <div class="an-g">
               <div class="am-u-sm-6 m-hot-news"><a href="#">
@@ -295,7 +302,7 @@
       <div class="am-u-sm-12 am-u-md-4 am-u-lg-4">
         <div class="am-panel am-panel-default m-panel">
           <div class="am-panel-hd"><div class="am-panel-title">最近话题</div></div>
-          <div class="am-panel-bd">
+          <div class="am-panel-bd my-panel">
            <ul class="am-list m-list m-topic">
              <li>
                <a class="m-department am-fl">桥梁设计研发</a>
@@ -339,15 +346,11 @@
               <li class="m-tab-time"><font>周</font>&nbsp|&nbsp<font>月</font>&nbsp|&nbsp<font>年</font></li>
           </ul>
           <div class="am-tabs-bd m-tab-bd ">
-              <div data-tab-panel-0 class="am-tab-panel am-active">
-                【青春】那时候有多好，任雨打湿裙角。忍不住哼起，心爱的旋律。绿油油的树叶，自由地在说笑。燕子忙归巢，风铃在舞蹈。经过青春的草地，彩虹忽然升起。即使视线渐渐模糊，它也在我心里。就像爱过的旋律，没人能抹去。因为生命存在失望，歌唱，所以才要歌唱。
-                【青春】那时候有多好，任雨打湿裙角。忍不住哼起，心爱的旋律。绿油油的树叶，自由地在说笑。燕子忙归巢，风铃在舞蹈。经过青春的草地，彩虹忽然升起。即使视线渐渐模糊，它也在我心里。就像爱过的旋律，没人能抹去。因为生命存在失望，歌唱，所以才要歌唱。
-                【青春】那时候有多好，任雨打湿裙角。忍不住哼起，心爱的旋律。绿油油的树叶，自由地在说笑。燕子忙归巢，风铃在舞蹈。经过青春的草地，彩虹忽然升起。即使视线渐渐模糊，它也在我心里。就像爱过的旋律，没人能抹去。因为生命存在失望，歌唱，所以才要歌唱。
+              <div data-tab-panel-0 class="am-tab-panel am-active my-panel">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium facere vel dicta ab voluptate consequuntur. Suscipit, sequi minima nulla asperiores, voluptatibus qui, quos rem eligendi temporibus culpa quaerat ducimus ipsa.
               </div>
-              <div data-tab-panel-1 class="am-tab-panel ">
-                【彩虹】那时候有多好，任雨打湿裙角。忍不住哼起，心爱的旋律。绿油油的树叶，自由地在说笑。燕子忙归巢，风铃在舞蹈。经过青春的草地，彩虹忽然升起。即使视线渐渐模糊，它也在我心里。就像爱过的旋律，没人能抹去。因为生命存在失望，歌唱，所以才要歌唱。
-                【彩虹】那时候有多好，任雨打湿裙角。忍不住哼起，心爱的旋律。绿油油的树叶，自由地在说笑。燕子忙归巢，风铃在舞蹈。经过青春的草地，彩虹忽然升起。即使视线渐渐模糊，它也在我心里。就像爱过的旋律，没人能抹去。因为生命存在失望，歌唱，所以才要歌唱。
-                【彩虹】那时候有多好，任雨打湿裙角。忍不住哼起，心爱的旋律。绿油油的树叶，自由地在说笑。燕子忙归巢，风铃在舞蹈。经过青春的草地，彩虹忽然升起。即使视线渐渐模糊，它也在我心里。就像爱过的旋律，没人能抹去。因为生命存在失望，歌唱，所以才要歌唱。
+              <div data-tab-panel-1 class="am-tab-panel my-panel">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, molestiae, perferendis. Doloremque facere beatae laudantium, harum facilis blanditiis tempora consectetur eum officiis? Consectetur ab vero ex, similique voluptas quos blanditiis.
               </div>
           </div>
        </div>
@@ -356,7 +359,7 @@
   </section>
   <section class="am-container m-course">
     <hgroup class="am-animation-slide-bottom am-animation-delay-1" data-am-scrollspy="{animation:'slide-bottom', delay: 40}">
-      <h3 class="am-fl">公共课程</h3>
+      <h2 class="am-fl">公共课程</h2>
       <ul class="m-course-list">
         <li><a href="#">全部</a></li>
         <li><a href="#">顶顶顶</a></li>
@@ -425,8 +428,7 @@
           <span class="am-icon-eye">&nbsp0&nbsp</span><span class="am-icon-comment">&nbsp1</span>
         </div></a>
       </div>
-    </div>
-    
+    </div>   
   </section>
     <footer data-am-widget="footer"
           class="am-footer am-footer-default"
