@@ -1,83 +1,303 @@
 <!Doctype html>
 <html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <meta name="author" content="John-fei" />
+  <title>EduSoho</title>
+  <link rel="alternate icon" type="image/png" href="./static/images/favicon.png">
+  <link rel="stylesheet" href="./static/css/amazeui.min.css">
+  <link rel="stylesheet" href="./static/css/public.css">
+  <link rel="stylesheet" href="./static/css/preview-questionnaire.css">
+  <style>
+    @media screen and (min-width: 1024px) {
+      .content{
+        width: 980px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 头部导航 -->
+  <header class="m-header">
+    <!-- PC端显示样式 -->
+    <section class="am-show-md-up" data-am-sticky>
+      <div class="am-g">
+        <!-- Logo -->
+        <div class=" am-u-sm-2 am-u-md-1 am-fl">
+          <a href="/" rel="nofollow" class="m-logo"><i class="am-icon-spinner"></i>EduSoho</a>
+        </div>
+        <!-- 页面标题 -->
+        <div class="am-u-sm-5 am-u-md-5 am-u-lg-3 am-u-md-centered am-g-fixed page-title">
+          <h1>预览问卷</h1>
+        </div>
 
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="description" content="">
-		<meta name="keywords" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="format-detection" content="telephone=no">
-		<meta name="renderer" content="webkit">
-		<meta http-equiv="Cache-Control" content="no-siteapp" />
-		<meta name="author" content="John-fei" />
-		<title>EduSoho</title>
-		<link rel="alternate icon" type="image/png" href="./static/images/favicon.png">
-		<link rel="stylesheet" href="./static/css/amazeui.min.css">
-		<link rel="stylesheet" href="./static/css/preview-questionnaire.css">
-		<style>
-			@media screen and (min-width: 1024px) {
-				.content {
-					width: 980px;
-				}
-			}
-		</style>
-	</head>
+        <div class="am-u-sm-5 am-u-md-4 am-u-lg-2 m-info" >
+          <div class="change">En</div>
+          <div class="news">
+            <i>X</i>
+            <span class="news-tip">3</span>
+          </div>
+          <div class="avatar am-dropdown" data-am-dropdown>
+            <a href="#" class="am-dropdown-toggle" data-am-dropdown-toggle><img src="./static/images/common/avatar.png" alt="avatar"></a>
+            <ul class="am-dropdown-content m-dropdown">
+              <li><a href="#"><span class="am-icon-user-secret am-icon-sm am-icon-fw">&nbsp&nbsp个人中心</span></a></li>
+              <li><a href="#"><span class="am-icon-gear am-icon-sm am-icon-fw">&nbsp&nbsp管理后台</span></a></li>
+              <li><a href="#"><span class="am-icon-sign-out am-icon-sm am-icon-fw">&nbsp&nbsp退出</span></a></li>
+            </ul>
+          </div>
 
-	<body>
+        </div>
+      </div>
+    </section>
+    <!-- 移动端显示样式 -->
+    <section class="am-header am-header-primary am-show-sm-only" data-am-widget="header">
+      <nav data-am-widget="header" class="am-header am-show-sm-only">
+            <h1 class="am-header-left">
+              <a href="/" rel="nofollow"><img src="./static/images/favicon.png" alt="logo"></a>
+            </h1>
+            <div class="am-header-right am-header-nav">
+              <a href="#right-link" class="" data-am-offcanvas="{target: '#r-nav',effect: 'push'}">
+                <i class="am-header-icon am-icon-bars"></i>
+              </a>
+            </div>
+      </nav>
+      <!-- 侧边栏内容 -->
+      <div id="r-nav" class="am-offcanvas">
+        <div class="am-offcanvas-bar am-offcanvas-bar-flip">
+          <nav class="am-offcanvas-content">
+              <a href="/" rel="nofollow"><span class="logo"></span></a>
+              <p><i class="am-icon-home"></i> <a href="/" rel="nofollow">通知</a></p>
+              <p><i class="am-icon-desktop"></i> <a href="/anli.html" rel="nofollow">语言</a></p>
+              <p><i class="am-icon-cogs"></i> <a href="/fuwu.html" rel="nofollow">退出</a></p>
+          </nav>
+        </div>
+      </div>
+    </section>
+  </header>
+  <!-- 预览问卷路径 -->
+  <div class="path am-hide-sm-only" style="display: none!important;">
+    <div class="am-container">
+      <a href="#">管理课程</a>><span>预览问卷</span>
+    </div>
+  </div>
+  <!-- 预览问卷的body -->
+  <section>
+    <div class="am-container content">
+      <!-- 问卷的题目 -->
+      <div class="preview-question-title am-animation-fade">
+        <h2 class="am-vertical-align-middle">我是一个问卷的标题</h2>
+      </div>
+      <!-- 问卷的内容 -->
+      <!-- 单选题 -->
+      <div class="single-question am-animation-slide-left">
+        <div class="am-form">
+          <!-- 题目类型 -->
+          <legend>单选题</legend>
+          <!-- 题目列表 -->
+          <ol>
+            <!-- 单选第一题 -->
+            <li>
+              <label for="single-question">如果你有30万你是选择买房还是买车？</label><br>
+              <!-- 第一个选项 -->
+              <div class="am-radio-inline">
+                <label for="single-question-1"><input type="radio" id="single-question-1" name="single-questiono" value="option1">单选框 - 选项一</label>
+              </div>
+              <!-- 第二个选项 -->
+              <div class="am-radio-inline">
+                <label for="single-question-2"><input type="radio" id="single-question-2" name="single-questiono" value="option2">单选框 - 选项二</label>
+              </div>
+            </li>
+            <!-- 单选第二题 -->
+            <li>
+              <label for="single-question">如果你有30万你是选择买房还是买车？</label><br>
+              <!-- 第一个选项 -->
+              <div class="am-radio-inline">
+                <label for="single-question-1"><input type="radio" id="single-question-1" name="single-questiono" value="option1">单选框 - 选项一</label>
+              </div>
+              <!-- 第二个选项 -->
+              <div class="am-radio-inline">
+                <label for="single-question-2"><input type="radio" id="single-question-2" name="single-questiono" value="option2">单选框 - 选项二</label>
+              </div>
+            </li>
+          </ol>
 
-		<div class="questionnaire">
-			<!--问卷标题-->
-			<div class="questionnaire-head">
-				<h2>问卷标题</h2>
-			</div>
-			<!--问卷主体-->
-			<div class="questionnaire-body">
-				<!--问题列表-->
-				<div class="question">
+        </div>
+      </div>
+      <!-- 多选题 -->
+      <div class="multiple-question am-animation-slide-right">
+        <div class="am-form">
 
-					<!--问题题目-->
-					<div class="question-text">
-						1.这个单选题的题目
-					</div>
-					<!--单选题-->
-					<div class="question-choice">
-						<input name="1" type="radio" value="选项一">选项一
-						<input name="1" type="radio" value="选项二">选项二
-					</div>
+          <legend>多选题</legend>
 
-					<!--问题题目-->
-					<div class="question-text">
-						2.这个多选题的题目
-					</div>
-					<!--多选-->
-					<div class="question-multi">
-						<input name="2" type="checkbox" value="选项一">选项一
-						<input name="2" type="checkbox" value="选项一">选项二
-						<input name="2" type="checkbox" value="选项一">选项三
+          <ol>
 
-						<!--问题题目-->
-						<div class="question-text">
-							3.这个问答题的题目
-						</div>
-						<!--问答题的内容-->
-						<div class="question-ask">
-							<textarea name="34" class="question_ask_text">
-								
-							</textarea>
-						</div>
+            <li>
+              <label for="multiple-question">现在你梦想拥有什么？</label><br>
+              <div class="am-checkbox-inline">
+                <label for="multiple-question-1"><input type="checkbox" name="multiple-question-1" value="multiple-question-1">车子</label>
+              </div>
+              <div class="am-checkbox-inline">
+                <label for="multiple-question-1"><input type="checkbox" name="multiple-question-1" value="multiple-question-1">房子</label>
+              </div>
+              <div class="am-checkbox-inline">
+                <label for="multiple-question-1"><input type="checkbox" name="multiple-question-1" value="multiple-question-1">妹子</label>
+              </div>
+              <div class="am-checkbox-inline">
+                <label for="multiple-question-1"><input type="checkbox" name="multiple-question-1" value="multiple-question-1">都想要</label>
+              </div>
+            </li>
 
-					</div>
+            <li>
+              <label for="multiple-question">现在你梦想拥有什么？</label><br>
+              <div class="am-checkbox-inline">
+                <label for="multiple-question-1"><input type="checkbox" name="multiple-question-1" value="multiple-question-1">车子</label>
+              </div>
+              <div class="am-checkbox-inline">
+                <label for="multiple-question-1"><input type="checkbox" name="multiple-question-1" value="multiple-question-1">房子</label>
+              </div>
+              <div class="am-checkbox-inline">
+                <label for="multiple-question-1"><input type="checkbox" name="multiple-question-1" value="multiple-question-1">妹子</label>
+              </div>
+              <div class="am-checkbox-inline">
+                <label for="multiple-question-1"><input type="checkbox" name="multiple-question-1" value="multiple-question-1">都想要</label>
+              </div>
+            </li>
 
-				</div>
-			</div>
+          </ol>
 
-			<div class="questionnaire-foot">
-				<input id="js-questionnaire-submit" type="submit" value="提交" />
-			</div>
+        </div>
+      </div>
+      <!-- 问答题 -->
+      <div class="txt-question am-animation-slide-left">
+        <div class="am-form">
 
-		</div>
+          <legend>问答题</legend>
 
-	</body>
+          <div class="am-form-group">
+            <label for="doc-ta-1">你喜欢我吗？请简述理由~</label>
+            <textarea class="" rows="5" id="doc-ta-1"></textarea>
+          </div>
+
+        </div>
+      </div>
+      <!-- 评价题 -->
+      <div class="hitstar am-animation-slide-right">
+        <div class="am-form">
+
+          <legend>评价题</legend>
+
+          <ol>
+            <li>
+
+              <label for="">请给下面的同学打分：</label>
+              <ol>
+                <li>张越
+                  <div id="start1" class="block">
+                    <div  class="star_score"></div>
+                    <div class="attitude"></div>
+                  </div> 
+                </li>
+                <li>宗路
+                  <div id="start2" class="block">
+                    <div  class="star_score"></div>
+                    <div class="attitude"></div>
+                  </div> 
+                </li>
+                <li>徐魁
+                  <div id="start3" class="block">
+                    <div  class="star_score"></div>
+                    <div class="attitude"></div>
+                  </div> 
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="content" style="margin:2rem 0;" >
+        <button class="am-btn am-btn-primary am-center">完成</button>
+      </div>
+    </div>
+  </section>
+  
+  <footer data-am-widget="footer" class="am-footer am-footer-default" data-am-footer="{}">
+    <div class="am-footer-switch">
+    <span class="am-footer-ysp" data-rel="mobile"
+          data-am-modal="{target: '#am-switch-mode'}">
+          云适配版
+    </span>
+      <span class="am-footer-divider"> | </span>
+      <a id="godesktop" data-rel="desktop" class="am-footer-desktop" href="javascript:">
+          电脑版
+      </a>
+    </div>
+    <div class="am-footer-miscs ">
+
+          <p>由 <a href="http://www.yunshipei.com/" title="五润科技" target="_blank" class="">五润科技</a>
+            提供技术支持</p>
+        <p>CopyRight©2014  AllMobilize Inc.</p>
+        <p>京ICP备13033158</p>
+    </div>
+  </footer>
+
+  <div id="am-footer-modal" class="am-modal am-modal-no-btn am-switch-mode-m am-switch-mode-m-default">
+    <div class="am-modal-dialog">
+      <div class="am-modal-hd am-modal-footer-hd">
+        <a href="javascript:void(0)" data-dismiss="modal" class="am-close am-close-spin " data-am-modal-close>&times;</a>
+      </div>
+      <div class="am-modal-bd">
+          您正在浏览的是
+
+        <span class="am-switch-mode-owner">
+            云适配
+        </span>
+
+        <span class="am-switch-mode-slogan">
+              为您当前手机订制的移动网站。
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="./static/plugins/jquery.min.js"></script>
+  <!--<![endif]-->
+  <!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn./staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="./static/plugins/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+  <script src="./static/plugins/amazeui.min.js"></script>
+  <script src="./static/plugins/iconfont.js"></script>
+  <script src="./static/plugins/starScore.js"></script>
+  <script>
+    // 星星的显示样式
+     var opts={
+        fen_d:22,
+        ScoreGrade:5,
+     };
+     scoreFun($("#start1"),opts);
+     scoreFun($("#start2"),{
+           fen_d:22,//每一个a的宽度
+           ScoreGrade:5//a的个数5
+         });
+     scoreFun($("#start3"),opts);
+     //显示分数
+      $(".show_number li p").each(function(index, element) {
+        var num=$(this).attr("tip");
+        var www=num*2*16;//
+        $(this).css("width",www);
+        $(this).parent(".atar_Show").siblings("span").text(num+"分");
+    });
+  </script>
+
+</body>
 
 </html>
