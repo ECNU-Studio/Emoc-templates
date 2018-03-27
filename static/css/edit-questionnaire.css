@@ -1,21 +1,58 @@
-.hitstar,/*星星评分*/
-.txt-question,/*问答题*/
-.multiple-question,/*多选题*/
-.single-question,/*单选题*/
-.edit-question-title
-{
-  /*box-shadow: 0 0 1rem #ccc;*/
-  margin-top: 20px;
-  background: #fff;
-  padding: 1.5rem 1rem;
-}
-.preview-question-title,
+/*问卷标题样式*/
 .edit-question-title{
   background: #fff;
   padding: 1.5rem 0;
+  margin-top: 20px; 
   text-align: center;
-}
+}	
 .edit-question-title h2,
 .preview-question-title h2{
   margin-bottom: 0;
+}
+/*表单样式*/
+.am-form ol{
+	list-style-position: inside; 
+}
+.am-form ol li{
+	background: #fff;
+	margin-top: 20px;
+	padding: 2rem 20px  1rem;
+}
+.am-form ol li div label{
+	display: inline-block;
+	margin-bottom: 1rem;
+}
+.am-form .problem{
+	background: #fff;
+	/*padding: 0px 50px 0;*/
+    margin-left: -31px;
+    background: #fff;
+}
+/*选项控制样式*/
+.opt-ctrl{
+	display: none;
+	float: right;
+}
+.opt-ctrl .item{
+	display: inline-block;
+	font-size: 2rem;
+}
+.am-radio:hover > .opt-ctrl{
+	display: block;
+}
+/*问题控制样式*/
+.problem-ctrl{
+	display: none;
+}
+.problem-ctrl .item{
+	display: inline-block;
+	font-size: 2rem;
+	color: red;
+}
+@media screen and (max-width:768px) {
+		.am-form .problem{
+		background: #fff;
+	    margin-left: -31px;
+	    background: #fff;
+	}
 }
