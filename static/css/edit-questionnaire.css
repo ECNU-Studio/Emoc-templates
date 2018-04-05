@@ -25,10 +25,15 @@
 .am-form .problem{
 	background: #fff;
     margin-left: -31px;
-    background: #fff;
 }
 .am-form .problem li{
 	overflow: hidden;
+}
+.am-form .problem label{
+	outline: none;
+}
+.am-form .problem label:focus{
+	background: #ccc;
 }
 /*选项控制样式*/
 .opt-ctrl{
@@ -63,6 +68,57 @@
 .rotate::before{
 	transform: rotate(180deg);
 	display: inline-block;
+}
+/* 添加问题控制样式 */
+.questionnaire-time,
+.add-problem{
+	margin-top:2rem;
+	border:1px dashed #ccc;
+	background:#fff;
+}
+.questionnaire-time:hover,
+.add-problem:hover{
+	background: #f7f7f9;
+}
+.add-problem-title{
+	display: block;
+	text-align: center;
+	font-size: 2rem;
+	margin-top:1rem;
+}
+.add-problem .item{
+	font-size: 1.4rem;
+	margin:1rem 0 ;
+	text-align: center;
+	cursor: pointer;
+}
+.add-problem .item i{
+	color: red;
+	font-size: 2rem;
+	margin-right: .5rem;
+}
+
+/* 问卷时间控制样式 */
+.questionnaire-time{
+	padding: 2rem 0 1rem;
+	overflow: auto;
+}
+.questionnaire-time .item{
+	text-align: center;
+}
+.questionnaire-time label[for=startTime]{
+	line-height: 40px;
+	float: left;
+	margin-right:1rem;
+}
+.questionnaire-time #startTime{
+	width: 60%;
+}
+
+/* 提交and预览样式 */
+.commit-and-preview{
+	margin: 1rem 0;
+	padding: 1rem 0;
 }
 @media screen and (max-width:768px) {
 		.am-form .problem{
