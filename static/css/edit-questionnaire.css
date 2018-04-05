@@ -24,9 +24,11 @@
 }
 .am-form .problem{
 	background: #fff;
-	/*padding: 0px 50px 0;*/
     margin-left: -31px;
     background: #fff;
+}
+.am-form .problem li{
+	overflow: hidden;
 }
 /*选项控制样式*/
 .opt-ctrl{
@@ -37,17 +39,30 @@
 	display: inline-block;
 	font-size: 2rem;
 }
+.am-checkbox:hover > .opt-ctrl,
 .am-radio:hover > .opt-ctrl{
 	display: block;
 }
 /*问题控制样式*/
 .problem-ctrl{
-	display: none;
+	display: block;
+	width: 100px;
+	height: 25px;
 }
 .problem-ctrl .item{
+	width: 2rem;
 	display: inline-block;
+	color: #09426f;
+}
+.problem-ctrl .item i{
 	font-size: 2rem;
-	color: red;
+}
+.problem-ctrl .item:hover{
+	color: #24b1bb;
+}
+.rotate::before{
+	transform: rotate(180deg);
+	display: inline-block;
 }
 @media screen and (max-width:768px) {
 		.am-form .problem{
