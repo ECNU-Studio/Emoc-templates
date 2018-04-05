@@ -56,3 +56,8 @@
 	    background: #fff;
 	}
 }
+@media screen and (min-width: 1024px) {
+      .content{
+		width: 980px;
+	}
+}
