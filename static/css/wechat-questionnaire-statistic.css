@@ -1,0 +1,119 @@
+body{
+    background:rgb(247, 247, 249);
+}
+.page-back{
+    background:#fff;
+    height: 4rem;
+    line-height: 4rem;
+}
+.page-title{
+    text-align: center;
+    font-size: 2rem;
+}
+.we-nav{
+    margin-top:1rem;
+    font-size: 1rem;
+    text-align: center;
+    height: 4rem;
+    line-height: 4rem;
+    background:#fff;
+}
+.we-nav a{
+    color: #000;
+}
+.we-nav .active{
+    border-bottom: 3px solid rgb(9, 66, 111);
+}
+/* 模块 */
+section{
+    margin-top: 1rem;
+}
+section h2{
+    color: #24b1bb;
+}
+.am-btn{
+    margin-left: 1rem;
+}
+.am-btn-wechat{
+    background:rgb(9, 66, 111);
+    border-color: rgb(9, 66, 111);
+}
+.am-btn-active{
+    margin-left: 1rem;
+    background: #24b1bb;
+    border-color: #24b1bb;
+}
+/* 课前问卷 */
+
+/* 课程目录 */
+.list-table li{
+    margin-bottom: 1rem;
+}
+.courseware{
+    height:5rem;
+    background:#fff;
+    border:1px solid #ccc;
+    margin-left: -1.5rem;
+    margin-right: 1.1rem;
+}
+.courseware .class-icon{
+    text-align: center;
+    line-height: 3rem;
+    color:#fff;
+    font-size: 2rem;
+    float: left;
+    width: 3rem;
+    height: 3rem;
+    background: #942f92;
+    margin:1rem 1rem;
+    margin-right: 2rem;
+}
+.courseware .class-icon .iconfont{
+    font-size: 3rem;
+    line-height: 3rem;
+    text-align: center;
+}
+.courseware>p{
+    display: block;
+    margin-top:.6rem;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+.courseware .class-size{
+    color: #ccc;
+    margin-top:0;
+    display: block;
+    font-size:0.5rem;
+}
+/* 评价 */
+.assess{
+    padding:1rem 0;
+    margin:2rem 0;
+    background: #fff;
+}
+.assess .assess-title{
+    height: 3rem;
+    line-height: 3rem;
+}
+.assess .assess-title h2{
+    margin: 0;
+    float: left;
+}
+.assess .assess-title .iconfont{
+    float: right;
+}
+.rotate::before{
+    font-size: 2rem;
+	transform: rotate(90deg);
+	display: inline-block;
+}
+.assess-body{
+    margin-top:.5rem;
+}
+.assess-body p{
+    margin:0;
+    float: left;
+}
+#start{
+    float: left;
+}

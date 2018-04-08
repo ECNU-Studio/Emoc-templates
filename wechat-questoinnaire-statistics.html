@@ -1,0 +1,134 @@
+<!Doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="author" content="John-fei" />
+    <title>Emoc</title>
+    <link rel="alternate icon" type="image/png" href="./static/images/favicon.png">
+    <link rel="stylesheet" href="./static/css/amazeui.min.css">
+    <link rel="stylesheet" href="./static/css/public.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/iconfont.css">
+    <link rel="stylesheet" href="./static/css/wechat-questionnaire-statistic.css">
+</head>
+
+<body>
+    <div class="am-container am-cf">
+        <!-- 微信返回条and页面标题 -->
+        <div class="am-g page-back">
+            <div class="am-u-sm-1">
+                <a href="#"><i class="iconfont icon-jiantou2"></i></a>
+            </div>
+            <div class="am-u-sm-4 am-u-sm-centered">
+                <div class="page-title">
+                    市场营销
+                </div>
+            </div>
+        </div>
+        <!-- 导航条 -->
+        <div class="am-g we-nav">
+            <div class="am-u-sm-3"><a href="#">信息与下载</a></div>
+            <div class="am-u-sm-3 active"><a href="#">问卷与测试</a></div>
+            <div class="am-u-sm-3"><a href="#">互动社区</a></div>
+            <div class="am-u-sm-3"><a href="#">班级排名</a></div>
+        </div>
+        <!-- 课前问卷 -->
+        <section class="preclass-questionnaire">
+            <h2>课前问卷</h2>
+            <button type="button" class="am-btn am-btn-primary am-btn-wechat">填问卷</button>
+            <button type="button" class="am-btn am-btn-default">已完成</button>
+            <button type="button" class="am-btn am-btn-success am-btn-active">问卷统计</button>
+            <hr>
+        </section>
+        <!-- 课程目录 -->
+        <section>
+            <h2>课程目录</h2>
+            <div class="am-container">
+                <ol class="list-table">
+                    <li>
+                        <p>市场管理知识</p>
+                        <div class="courseware am-cf">
+                            <div class="class-icon">
+                                <i class="iconfont icon-icon-55"></i>
+                            </div>
+                            <p>概论.MP4</p>
+                            <p class="class-size">20.kb</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>市场管理知识</p>
+                        <div class="courseware am-cf">
+                            <div class="class-icon" style="background:#b7462b;">
+                                P
+                            </div>
+                            <p>呵呵哒.PPT</p>
+                            <p class="class-size">20.kb</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>市场管理知识</p>
+                        <div class="courseware am-cf">
+                            <div class="class-icon" style="background:#227246">
+                                E
+                            </div>
+                            <p>我就试试.XLS</p>
+                            <p class="class-size">20.kb</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <hr>
+        </section>
+        <!--  课后测试 -->
+        <section>
+            <h2>课后测试</h2>
+            <button type="button" class="am-btn am-btn-primary am-btn-wechat">做测试</button>
+            <button type="button" class="am-btn am-btn-default">未评分</button>
+            <button type="button" class="am-btn am-btn-success am-btn-active">查看试卷</button>
+        </section>
+        <!-- 评价 -->
+        <div class="assess am-g " id="assess">
+            <div class="am-container">
+                <div class="assess-title" data-am-collapse="{parent: '#assess', target: '#assess-body'}">
+                    <h2>评价</h2>
+                    <i class="iconfont icon-jiantou rotate"></i>
+                </div>
+                <div class="assess-body am-collapse am-cf" id="assess-body">
+                    <p>最新评价</p>
+                    <div id="start1" class="block">
+                        <form data-am-rating="">
+                            <input type="hidden" name="score" value="3">
+                            <a class="am-padding-lg" role="button">
+                                <i class="am-icon-star"></i>
+                                <i class="am-icon-star"></i>
+                                <i class="am-icon-star"></i>
+                                <i class="am-icon-star-o"></i>
+                                <i class="am-icon-star-o"></i>
+                            </a>
+                        </form>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, non saepe! Quo dolor aspernatur earum distinctio facere numquam delectus laborum ratione eos. Magni error accusamus, similique maxime harum velit rem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    
+
+    <script src="./static/plugins/jquery.min.js"></script>
+    <script src="./static/plugins/amazeui.min.js"></script>
+    <script src="./static/plugins/iconfont.js"></script>
+    <script src="./static/plugins/amazeui.rating.js"></script>
+    
+</body>
+
+</html>

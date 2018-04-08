@@ -1,0 +1,51 @@
+body{
+    background:rgb(247, 247, 249);
+}
+.page-back{
+    background:#fff;
+    height: 4rem;
+    line-height: 4rem;
+}
+.page-title{
+    text-align: center;
+    font-size: 2rem;
+}
+ol li{
+    position: relative;
+    /* height: 1.5rem; */
+    /* overflow: hidden; */
+}
+.problem{
+    margin: 1rem 0 0 0;
+    background: #fff;
+    padding: 5px 1rem;
+}
+.problem-info{
+    overflow: auto;
+}
+.problem-info p{
+    margin-bottom: 0;
+    float: left;
+}
+.problem-info .iconfont{
+    float: right;
+    color: red;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+.problem-info span{
+    color: red;
+}
+.problem .content{
+    margin:0;
+    padding: 5px 1rem;
+}
+.score{
+    margin: 1rem 0 0 0;
+    background: #fff;
+    padding: 5px 1rem;
+    text-align: center;
+    color:red;
+    height: 4rem;
+    line-height: 4rem;
+}
