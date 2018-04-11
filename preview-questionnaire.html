@@ -121,26 +121,7 @@
   <script src="./static/plugins/iconfont.js"></script>
   <script src="./static/plugins/starScore.js"></script>
   <script src="static/plugins/amazeui.rating.js" ></script>
-  <script>
-    // 星星的显示样式
-     var opts={
-        fen_d:22,
-        ScoreGrade:5,
-     };
-     scoreFun($("#start1"),opts);
-     scoreFun($("#start2"),{
-           fen_d:22,//每一个a的宽度
-           ScoreGrade:5//a的个数5
-         });
-     scoreFun($("#start3"),opts);
-     //显示分数
-      $(".show_number li p").each(function(index, element) {
-        var num=$(this).attr("tip");
-        var www=num*2*16;//
-        $(this).css("width",www);
-        $(this).parent(".atar_Show").siblings("span").text(num+"分");
-    });
-  </script>
+ 
 
 </body>
 

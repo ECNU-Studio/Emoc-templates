@@ -168,7 +168,6 @@
 @media only screen and (max-width: 640px){
 	.m-header{padding: 0;height: auto;  }
 	.m-active{margin-top:0px;}
-	.m-active .items li{}
 	.m-course{margin-top: 1rem;}
 	.m-course-list{
 		float: left;
