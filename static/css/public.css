@@ -102,7 +102,7 @@ ul li {
 	font-size: 3rem;
 	font-weight: 500;
 	font-style: normal;
-	margin-top:-10px;
+	margin-top:-7px;
 	color: #095f8a
 }
 .m-header .news .news-tip{
@@ -115,8 +115,8 @@ ul li {
 	text-align: center;
 	line-height: 14px;
 	color: #fff;
-	top:-6px;
-	left: 80px;
+	top:-3px;
+	left: 88px;
 }
 .m-header .change:hover{
 	border:1.5px solid #ccc;
