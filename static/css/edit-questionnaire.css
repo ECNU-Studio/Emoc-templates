@@ -1,3 +1,22 @@
+/* zonglu 加的样式*/
+/*拖拽时候占位符样式*/
+.question-highlight{
+	border: 1px dotted black;
+    margin: 0 1em 1em 0;
+    height: 50px;
+}
+/*第一个选项，不显示删除按钮和上移按钮*/
+div.choices div.choice:first-child div.opt-ctrl span.delete,div.choices div.choice:first-child div.opt-ctrl span.up{
+	/*color: red;*/
+	display: none;
+}
+/*第一个选项，不显示下移按钮*/
+div.choices div.choice:last-child div.opt-ctrl span.down{
+	/*color: red;*/
+	display: none;
+}
+
+
 /*问卷标题样式*/
 .edit-question-title{
   background: #fff;

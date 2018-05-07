@@ -17,7 +17,8 @@
 		<link rel="stylesheet" type="text/css" href="./static/css/iconfont.css">
 		<link rel="stylesheet" href="./static/css/public.css">
 		<link rel="stylesheet" href="./static/css/edit-questionnaire.css">
-		<link rel="stylesheet" href="static/plugins/dragula.min.css" />
+		<!--<link rel="stylesheet" href="static/plugins/dragula.min.css" />-->
+		<link rel="stylesheet" href="static/plugins/jquery-ui.min.css" />
 	</head>
 
 	<body>
@@ -27,75 +28,140 @@
 				<div class="edit-questionnaire-title">
 					<h2 class="am-vertical-align-middle">我是一个问卷的标题</h2>
 				</div>
+				
+				
+				
 				<!-- 问卷的内容 -->
-				<div id='dragula-container' class="am-form">
+				<div id='dragula-container' class="am-form question-list">
+					<!--问题div-->
 					<div class="question">
-						<div class="title">
+						<!--问题标题div-->
+						<div class="question-title">
 							<label contenteditable="true">点击编辑单选题问题</label>
 						</div>
+						<!--问题选项div-->
 						<div class="choices">
-							<div>
-									<input type="radio" name="single-questiono" value="option1">
-									<label contenteditable="true">option1</label>
-									<div class="opt-ctrl">
-									<span class="item"><i class="iconfont icon-icon-34"></i></span>
-									<span class="item"><i class="iconfont icon-icon-56"></i></span>
-									<span class="item"><i class="iconfont icon-icon-89"></i></span>
-									<span class="item"><i class="iconfont icon-icon-89 rotate"></i></span>
-								</div>
-							</div>
-							<div class="am-radio">
+							<!--第一个没有按钮-->
+							<div class="am-radio choice">
 								<input type="radio" name="single-questiono" value="option1">
 								<span>
 									<label contenteditable="true">单选框 - 选项一</label>
 								</span>
 								<div class="opt-ctrl">
-									<span class="item"><i class="iconfont icon-icon-34"></i></span>
-									<span class="item"><i class="iconfont icon-icon-56"></i></span>
-									<span class="item"><i class="iconfont icon-icon-89"></i></span>
-									<span class="item"><i class="iconfont icon-icon-89 rotate"></i></span>
+									<span class="copy item"><i class="iconfont icon-icon-34"></i></span>
+									<span class="delete item"><i class="iconfont icon-icon-56"></i></span>
+									<span class="up item"><i class="iconfont icon-icon-89"></i></span>
+									<span class="down item"><i class="iconfont icon-icon-89 rotate"></i></span>
 								</div>
 							</div>
-
+							<div class="am-radio choice">
+								<input type="radio" name="single-questiono" value="option1">
+								<span>
+									<label contenteditable="true">单选框 - 选项一</label>
+								</span>
+								<div class="opt-ctrl">
+									<span class="copy item"><i class="iconfont icon-icon-34"></i></span>
+									<span class="delete item"><i class="iconfont icon-icon-56"></i></span>
+									<span class="up item"><i class="iconfont icon-icon-89"></i></span>
+									<span class="down item"><i class="iconfont icon-icon-89 rotate"></i></span>
+								</div>
+							</div>
 						</div>
 						<div class="question-ctrl">
 							<span class="handle item"><i class="iconfont icon-icon-90"></i></span>
-							<span class="item"><i class="iconfont icon-icon-3"></i></span>
-							<span class="item"><i class="iconfont icon-icon-66"></i></span>
+							<span class="copy item"><i class="iconfont icon-icon-3"></i></span>
+							<span class="delete item"><i class="iconfont icon-icon-66"></i></span>
 						</div>
 					</div>
-					<div  class="question">
-						<div class="title">
-							<label contenteditable="true">点击编辑单选题问题</label>
+					
+					
+					<div class="question">
+						<div class="question-title">
+							<label contenteditable="true">点击编辑多选题问题</label>
 						</div>
 						<div class="choices">
-							<div class="am-radio">
-								<input type="radio" name="single-questiono" value="option1">
+							<div class="am-radio choice">
+								<input type="checkbox" name="single-questiono" value="option2">
 								<span>
-									<label contenteditable="true">单选框 - 选项一</label>
+									<label contenteditable="true">复选框 - 选项一</label>
 								</span>
 								<div class="opt-ctrl">
-									<span class="item"><i class="iconfont icon-icon-34"></i></span>
-									<span class="item"><i class="iconfont icon-icon-56"></i></span>
-									<span class="item"><i class="iconfont icon-icon-89"></i></span>
-									<span class="item"><i class="iconfont icon-icon-89 rotate"></i></span>
+									<span class="copy item"><i class="iconfont icon-icon-34"></i></span>
+									<span class="delete item"><i class="iconfont icon-icon-56"></i></span>
+									<span class="up item"><i class="iconfont icon-icon-89"></i></span>
+									<span class="down item"><i class="iconfont icon-icon-89 rotate"></i></span>
 								</div>
 							</div>
-							<div class="am-radio">
-								<input type="radio" name="single-questiono" value="option1"><label contenteditable="true">单选框 - 选项一</label>
+							<div class="am-radio choice">
+								<input type="checkbox" name="single-questiono" value="option2">
+								<span>
+									<label contenteditable="true">复选框 - 选项二</label>
+								</span>
 								<div class="opt-ctrl">
-									<span class="item"><i class="iconfont icon-icon-34"></i></span>
-									<span class="item"><i class="iconfont icon-icon-56"></i></span>
-									<span class="item"><i class="iconfont icon-icon-89"></i></span>
-									<span class="item"><i class="iconfont icon-icon-89 rotate"></i></span>
+									<span class="copy item"><i class="iconfont icon-icon-34"></i></span>
+									<span class="delete item"><i class="iconfont icon-icon-56"></i></span>
+									<span class="up item"><i class="iconfont icon-icon-89"></i></span>
+									<span class="down item"><i class="iconfont icon-icon-89 rotate"></i></span>
 								</div>
 							</div>
-
 						</div>
 						<div class="question-ctrl">
 							<span class="handle item"><i class="iconfont icon-icon-90"></i></span>
-							<span class="item"><i class="iconfont icon-icon-3"></i></span>
-							<span class="item"><i class="iconfont icon-icon-66"></i></span>
+							<span class="copy item"><i class="iconfont icon-icon-3"></i></span>
+							<span class="delete item"><i class="iconfont icon-icon-66"></i></span>
+						</div>
+					</div>
+					
+					<div class="question">
+						<div class="question-title">
+							<label contenteditable="true">点击编辑评分题题目</label>
+						</div>
+						
+						<div class="choices">
+							<div class="am-radio choice">
+								<span>
+									<label contenteditable="true">评分题 - 选项一</label>
+								</span>
+								<div class="opt-ctrl">
+									<span class="copy item"><i class="iconfont icon-icon-34"></i></span>
+									<span class="delete item"><i class="iconfont icon-icon-56"></i></span>
+									<span class="up item"><i class="iconfont icon-icon-89"></i></span>
+									<span class="down item"><i class="iconfont icon-icon-89 rotate"></i></span>
+								</div>
+							</div>
+							<div class="am-radio choice">
+								<span>
+									<label contenteditable="true">评分题 - 选项二</label>
+								</span>
+								<div class="opt-ctrl">
+									<span class="copy item"><i class="iconfont icon-icon-34"></i></span>
+									<span class="delete item"><i class="iconfont icon-icon-56"></i></span>
+									<span class="up item"><i class="iconfont icon-icon-89"></i></span>
+									<span class="down item"><i class="iconfont icon-icon-89 rotate"></i></span>
+								</div>
+							</div>
+						</div>
+						<div class="question-ctrl">
+							<span class="handle item"><i class="iconfont icon-icon-90"></i></span>
+							<span class="copy item"><i class="iconfont icon-icon-3"></i></span>
+							<span class="delete item"><i class="iconfont icon-icon-66"></i></span>
+						</div>
+					</div>
+					
+					
+					<div class="question">
+						<div class="question-title">
+							<label contenteditable="true">点击编辑问答题题目</label>
+						</div>
+						<div class="answer-text">
+							<div class="am-form-group">
+			                <textarea  rows="3"></textarea>
+			              </div>
+						</div>
+						<div class="question-ctrl">
+							<span class="handle item"><i class="iconfont icon-icon-90"></i></span>
+							<span class="copy item"><i class="iconfont icon-icon-3"></i></span>
+							<span class="delete item"><i class="iconfont icon-icon-66"></i></span>
 						</div>
 					</div>
 				</div>
@@ -104,10 +170,10 @@
 				<div class="add-problem">
 					<div class="add-problem-title">添加问题</div>
 					<div class="am-g">
-						<span class="am-u-sm-3 item"><i class="iconfont icon-icon-93"></i>单选题</span>
-						<span class="am-u-sm-3 item"><i class="iconfont icon-icon-71"></i>多选题</span>
-						<span class="am-u-sm-3 item"><i class="iconfont icon-icon-44"></i>问答题</span>
-						<span class="am-u-sm-3 item"><i class="iconfont icon-icon-92"></i>评分题</span>
+						<span class="am-u-sm-3 item question-radio"><i class="iconfont icon-icon-93"></i>单选题</span>
+						<span class="am-u-sm-3 item question-checkbox"><i class="iconfont icon-icon-71"></i>多选题</span>
+						<span class="am-u-sm-3 item question-text"><i class="iconfont icon-icon-44"></i>问答题</span>
+						<span class="am-u-sm-3 item question-star"><i class="iconfont icon-icon-92"></i>评分题</span>
 					</div>
 				</div>
 
@@ -151,13 +217,15 @@
 		<script src="./static/plugins/jquery.min.js"></script>
 		<!--<![endif]-->
 		<!--[if lte IE 8 ]>
-<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://cdn./staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-<script src="./static/plugins/amazeui.ie8polyfill.min.js"></script>
-<![endif]-->
-		<script src="./static/plugins/amazeui.min.js"></script>
-		<script src="./static/plugins/iconfont.js"></script>
-		<script src="./static/plugins/dragula.min.js"></script>
+		<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://cdn./staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+		<script src="./static/plugins/amazeui.ie8polyfill.min.js"></script>
+		<![endif]-->
+		<script src="static/plugins/amazeui.min.js"></script>
+		<script src="static/plugins/iconfont.js"></script>
+		<!--<script src="./static/plugins/dragula.min.js"></script>-->
+		<script src="static/plugins/jquery-ui.min.js"></script>
+		
 		<script src="static/js/edit-questionnaire.js"></script>
 	</body>
 
