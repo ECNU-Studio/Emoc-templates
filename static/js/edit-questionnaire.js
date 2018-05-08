@@ -30,19 +30,18 @@ $("#dragula-container").sortable({
 });
 
 //复制问题
-$('.question-ctrl>span.copy').click(function(){
-	console.log(123)
+$('.question-list').on('click','.question-ctrl>span.copy',function(){
 	var question = $(this).closest('div.question');
-	question.append(question.clone(true));
+	question.append(question.clone(true));	
 })
 
 //删除问题
-$('.question-ctrl>span.delete').click(function(){
+$('.question-list').on('click','.question-ctrl>span.delete',function(){
 	var question = $(this).closest('div.question');
 	question.remove();
 })
 
-//添加问题
+//问题添加
 $(".question-radio").click(function(){
 	$('.question-list').append(htmlRadio);
 })
@@ -57,26 +56,26 @@ $(".question-star").click(function(){
 })
 
 //复制选项
-$('.opt-ctrl>span.copy').click(function(){
+$('.question-list').on('click','.opt-ctrl>span.copy',function(){
 	var choice = $(this).closest('div.choice');
 	choice.parent().append(choice.clone(true));
 })
 
 //删除选项
-$('.opt-ctrl>span.delete').click(function(){
+$('.question-list').on('click','.opt-ctrl>span.delete',function(){
 	var choice = $(this).closest('div.choice');
 	choice.remove();
 })
 
 //上移选项
-$('.opt-ctrl>span.up').click(function(){
+$('.question-list').on('click','.opt-ctrl>span.up',function(){
 	var choice = $(this).closest('div.choice');
 	var previous = choice.prev();
 	choice.after(previous);
 })
 
 //下移选项
-$('.opt-ctrl>span.down').click(function(){
+$('.question-list').on('click','.opt-ctrl>span.down',function(){
 	var choice = $(this).closest('div.choice');
 	var next = choice.next();
 	choice.before(next);
