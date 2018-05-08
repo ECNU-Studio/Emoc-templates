@@ -42,16 +42,16 @@ $('.question-list').on('click','.question-ctrl>span.delete',function(){
 })
 
 //问题添加
-$(".question-radio").click(function(){
+$('.question-add').on('click','.question-radio',function(){
 	$('.question-list').append(htmlRadio);
 })
-$(".question-checkbox").click(function(){
+$('.question-add').on('click','.question-checkbox',function(){
 	$('.question-list').append(htmlCheckbox);
 })
-$(".question-text").click(function(){
+$('.question-add').on('click','.question-text',function(){
 	$('.question-list').append(htmlText);
 })
-$(".question-star").click(function(){
+$('.question-add').on('click','.question-star',function(){
 	$('.question-list').append(htmlStar);
 })
 
@@ -79,4 +79,16 @@ $('.question-list').on('click','.opt-ctrl>span.down',function(){
 	var choice = $(this).closest('div.choice');
 	var next = choice.next();
 	choice.before(next);
+})
+
+$('.preview').on('click',function(){
+	console.log(123);
+	$('.question').each(function(index,element){
+		console.log(index);
+		console.log(element);
+		title = $(element).find('.question-title>label').text();
+		choices = {}
+//		choices = $(element).find('.choices>div.choice>span>label').
+//		console.log(choices);
+	})
 })
