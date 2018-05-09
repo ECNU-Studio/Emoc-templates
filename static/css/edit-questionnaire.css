@@ -5,6 +5,10 @@
     margin: 0 1em 1em 0;
     height: 50px;
 }
+/*拖拽时候，更改鼠标样式*/
+div.question-ctrl span.handle{
+	cursor: move;
+}
 /*第一个选项，不显示删除按钮和上移按钮*/
 div.choices div.choice:first-child div.opt-ctrl span.delete,div.choices div.choice:first-child div.opt-ctrl span.up{
 	/*color: red;*/

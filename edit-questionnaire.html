@@ -19,6 +19,8 @@
 		<link rel="stylesheet" href="./static/css/edit-questionnaire.css">
 		<!--<link rel="stylesheet" href="static/plugins/dragula.min.css" />-->
 		<link rel="stylesheet" href="static/plugins/jquery-ui.min.css" />
+		<link rel="stylesheet" href="static/plugins/amazeui.datetimepicker.css" />
+		
 	</head>
 
 	<body>
@@ -34,7 +36,7 @@
 				<!-- 问卷的内容 -->
 				<div id='dragula-container' class="am-form question-list">
 					<!--问题div-->
-					<div class="question">
+					<div class="question"  data-schema-type="radio">
 						<!--问题标题div-->
 						<div class="question-title">
 							<label contenteditable="true">点击编辑单选题问题</label>
@@ -45,7 +47,7 @@
 							<div class="am-radio choice">
 								<input type="radio" name="single-questiono" value="option1">
 								<span>
-									<label contenteditable="true">单选框 - 选项一</label>
+									<label contenteditable="true" class="text">单选框 - 选项一</label>
 								</span>
 								<div class="opt-ctrl">
 									<span class="copy item"><i class="iconfont icon-icon-34"></i></span>
@@ -75,7 +77,7 @@
 					</div>
 					
 					
-					<div class="question">
+					<div class="question"  data-schema-type="checkbox">
 						<div class="question-title">
 							<label contenteditable="true">点击编辑多选题问题</label>
 						</div>
@@ -112,11 +114,10 @@
 						</div>
 					</div>
 					
-					<div class="question">
+					<div class="question" data-schema-type="star">
 						<div class="question-title">
 							<label contenteditable="true">点击编辑评分题题目</label>
 						</div>
-						
 						<div class="choices">
 							<div class="am-radio choice">
 								<span>
@@ -149,7 +150,7 @@
 					</div>
 					
 					
-					<div class="question">
+					<div class="question" data-schema-type="text">
 						<div class="question-title">
 							<label contenteditable="true">点击编辑问答题题目</label>
 						</div>
@@ -181,17 +182,17 @@
 				<div class="questionnaire-time">
 					<div class="am-g">
 						<div class="am-u-md-4">
-							<label for="startTime">开始时间</label>
-							<input class="am-form-field" id="startTime" data-am-datepicker="{viewMode:'integer',format:'yyyy-mm-dd'}">
+							<label>开始时间</label>
+							<input type="text" id="start-time" class="am-form-field datetimepicker" data-date-format="yyyy-mm-dd hh:ii">
 						</div>
 						<div class="am-u-md-4">
-							<label for="startTime">结束时间</label>
-							<input class="am-form-field" id="startTime" data-am-datepicker>
+							<label>结束时间</label>
+							<input type="text" id="end-time"  class="am-form-field datetimepicker" data-date-format="yyyy-mm-dd hh:ii">
 						</div>
 						<div class="am-u-md-4">
 							<div class="am-radio">
 								<label for="enView">
-					                <input type="radio">学员可查看问卷统计
+					                <input id="show-stat" type="radio">学员可查看问卷统计
 					              </label>
 							</div>
 						</div>
@@ -222,10 +223,10 @@
 		<script src="./static/plugins/amazeui.ie8polyfill.min.js"></script>
 		<![endif]-->
 		<script src="static/plugins/amazeui.min.js"></script>
+		<script src="static/plugins/amazeui.datetimepicker.min.js"></script>
 		<script src="static/plugins/iconfont.js"></script>
 		<!--<script src="./static/plugins/dragula.min.js"></script>-->
 		<script src="static/plugins/jquery-ui.min.js"></script>
-		
 		<script src="static/js/edit-questionnaire.js"></script>
 	</body>
 

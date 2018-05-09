@@ -21,6 +21,41 @@ var htmlStar = '<div class="question">						<div class="question-title">							<
 //  return handle;
 //}
 //});
+var formdata = {}
+var questions = []
+var question = {}
+var choices = []
+var choice = {}
+function mixed(){
+	questions = []
+	$('.question').each(function(qindex,qelement){
+		question = {}
+		question.sort = qindex
+		question.lable = $(qelement).find('.question-title>label').text();
+		question.type = $(qelement).attr("data-schema-type");
+		choices = []
+		$(qelement).find('.choices>div.choice').each(function(cindex,celement){
+			choice = {}
+			inputs = $(celement).find('input');
+			if(inputs.length>0){
+				checked = inputs.get(0).checked;
+				choice.checked = checked;
+			}
+			choice.sort = cindex;
+			choice.label = $(celement).find('label').text();
+			choices.push(choice);
+		})
+		if(choices.length>0){
+			question.choices = choices;
+		}
+		questions.push(question);
+	})
+	formdata.questions = questions;
+	formdata.starttime = $('#start-time').val();
+	formdata.endtime = $('#end-time').val();
+	formdata.showstat = document.getElementById('show-stat').checked;
+	console.log(formdata)
+}
 
 //jquery ui拖拽
 $("#dragula-container").sortable({
@@ -74,6 +109,8 @@ $('.question-list').on('click','.opt-ctrl>span.up',function(){
 	choice.after(previous);
 })
 
+$('.datetimepicker').datetimepicker();
+
 //下移选项
 $('.question-list').on('click','.opt-ctrl>span.down',function(){
 	var choice = $(this).closest('div.choice');
@@ -82,13 +119,5 @@ $('.question-list').on('click','.opt-ctrl>span.down',function(){
 })
 
 $('.preview').on('click',function(){
-	console.log(123);
-	$('.question').each(function(index,element){
-		console.log(index);
-		console.log(element);
-		title = $(element).find('.question-title>label').text();
-		choices = {}
-//		choices = $(element).find('.choices>div.choice>span>label').
-//		console.log(choices);
-	})
+	mixed();
 })
