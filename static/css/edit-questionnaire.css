@@ -39,7 +39,7 @@ div.choices div.choice:last-child div.opt-ctrl span.down{
 .am-form .question{
 	background: #fff;
 	margin-top: 20px;
-    padding: 2rem 20px 1rem;
+    padding: 2rem 2rem 3rem;
 }
 
 .am-form .question label{
