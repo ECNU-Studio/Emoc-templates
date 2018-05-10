@@ -20,6 +20,52 @@ div.choices div.choice:last-child div.opt-ctrl span.down{
 	display: none;
 }
 
+.footer{
+	width: 80%;
+}
+
+/*问卷标题样式*/
+.edit-questionnaire-title{
+  background: #fff;
+  padding: 1.5rem 0;
+  margin-top: 20px; 
+  text-align: center;
+}	
+.edit-questionnaire-title h2,
+.preview-questionnaire-title h2{
+  margin-bottom: 0;
+}
+
+.am-form .question{
+	background: #fff;
+	margin-top: 20px;
+    padding: 2rem 20px 1rem;
+}
+
+.am-form .question label{
+	outline: none;
+}
+.am-form .question label:focus{
+	background: #ccc;
+}
+
+.question-ctrl{
+	    display: block;
+    width: 100px;
+    height: 25px;
+        float: right;
+}
+.question-ctrl .item{
+    width: 2rem;
+    display: inline-block;
+    color: #09426f;
+}
+
+.question-ctrl .item i {
+    font-size: 2rem;
+}
+
+
 
 /*问卷标题样式*/
 .edit-question-title{

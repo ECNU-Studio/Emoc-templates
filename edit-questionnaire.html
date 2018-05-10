@@ -20,7 +20,7 @@
 		<!--<link rel="stylesheet" href="static/plugins/dragula.min.css" />-->
 		<link rel="stylesheet" href="static/plugins/jquery-ui.min.css" />
 		<link rel="stylesheet" href="static/plugins/amazeui.datetimepicker.css" />
-		
+
 	</head>
 
 	<body>
@@ -30,13 +30,11 @@
 				<div class="edit-questionnaire-title">
 					<h2 class="am-vertical-align-middle">我是一个问卷的标题</h2>
 				</div>
-				
-				
-				
+
 				<!-- 问卷的内容 -->
 				<div id='dragula-container' class="am-form question-list">
 					<!--问题div-->
-					<div class="question"  data-schema-type="radio">
+					<div class="question" data-schema-type="radio">
 						<!--问题标题div-->
 						<div class="question-title">
 							<label contenteditable="true">点击编辑单选题问题</label>
@@ -75,9 +73,8 @@
 							<span class="delete item"><i class="iconfont icon-icon-66"></i></span>
 						</div>
 					</div>
-					
-					
-					<div class="question"  data-schema-type="checkbox">
+
+					<div class="question" data-schema-type="checkbox">
 						<div class="question-title">
 							<label contenteditable="true">点击编辑多选题问题</label>
 						</div>
@@ -113,7 +110,7 @@
 							<span class="delete item"><i class="iconfont icon-icon-66"></i></span>
 						</div>
 					</div>
-					
+
 					<div class="question" data-schema-type="star">
 						<div class="question-title">
 							<label contenteditable="true">点击编辑评分题题目</label>
@@ -148,16 +145,15 @@
 							<span class="delete item"><i class="iconfont icon-icon-66"></i></span>
 						</div>
 					</div>
-					
-					
+
 					<div class="question" data-schema-type="text">
 						<div class="question-title">
 							<label contenteditable="true">点击编辑问答题题目</label>
 						</div>
 						<div class="answer-text">
 							<div class="am-form-group">
-			                <textarea  rows="3"></textarea>
-			              </div>
+								<textarea rows="3"></textarea>
+							</div>
 						</div>
 						<div class="question-ctrl">
 							<span class="handle item"><i class="iconfont icon-icon-90"></i></span>
@@ -180,16 +176,17 @@
 
 				<!-- 问卷时间 -->
 				<div class="questionnaire-time">
-					<div class="am-g">
-						<div class="am-u-md-4">
-							<label>开始时间</label>
-							<input type="text" id="start-time" class="am-form-field datetimepicker" data-date-format="yyyy-mm-dd hh:ii">
+					<div class="am-g am-form am-form-inline footer">
+						<div class="am-form-group am-form-icon">
+							<i class="am-icon-calendar"></i>
+							<input type="text" id="start-time" class="am-form-field datetimepicker" data-date-format="yyyy-mm-dd hh:ii" placeholder="开始时间">
 						</div>
-						<div class="am-u-md-4">
-							<label>结束时间</label>
-							<input type="text" id="end-time"  class="am-form-field datetimepicker" data-date-format="yyyy-mm-dd hh:ii">
+						<div class="am-form-group am-form-icon">
+							<i class="am-icon-calendar"></i>
+							<input type="text" id="end-time" class="am-form-field datetimepicker" data-date-format="yyyy-mm-dd hh:ii" placeholder="结束时间">
 						</div>
-						<div class="am-u-md-4">
+						
+						<div class="am-form-group">
 							<div class="am-radio">
 								<label for="enView">
 					                <input id="show-stat" type="radio">学员可查看问卷统计
