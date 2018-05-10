@@ -67,7 +67,7 @@ $("#dragula-container").sortable({
 //复制问题
 $('.question-list').on('click','.question-ctrl>span.copy',function(){
 	var question = $(this).closest('div.question');
-	question.append(question.clone(true));	
+	question.after(question.clone(true));	
 })
 
 //删除问题
