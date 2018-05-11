@@ -4,6 +4,7 @@
 	border: 1px dotted black;
     margin: 0 1em 1em 0;
     height: 50px;
+    margin-top: 20px;
 }
 /*拖拽时候，更改鼠标样式*/
 div.question-ctrl span.handle{
