@@ -7,7 +7,33 @@ li{list-style: none;display:inline-block;}
 a{text-decoration:none;color:#959a9b;}
 a:hover{color:#000;}
 
-/* nav-style */
-.nav{display: flex;display: -webkit-flex;justify-content:space-around;height: 7rem;background:#ccc;}
-.nav .logo{position: relative;z-index: 1;background:url(../images/header-logo.png);width:5rem;height:7rem; }
-.nav .logo h1{position: absolute;z-index: 0;}
+/* nav */
+.nav{display: flex;display: -webkit-flex;justify-content:space-between;align-items: center;}
+.nav .logo{position: relative;background-image:url(../images/header-logo.png);background-size:80%;background-position: center;background-repeat:no-repeat;}
+.nav .logo h1{position: absolute;left:-9999px;}
+.nav .navbar ul{display: -webkit-flex;display: flex;width:24rem;justify-content: space-between;}
+.nav .navbar ul li a{font-size: 1.6rem;}
+
+
+/* 屏幕尺寸小于415px */
+@media screen and (max-width:415px){
+    .nav{display: none;}
+}
+/* 屏幕尺寸大于415px小于770px */
+@media screen and (min-width:415px) and (max-width:770px){
+    /* nav-style */
+    .nav{height: 5rem;padding: 0 1rem;}
+    .nav .logo{width:5rem;height:5rem;background-size: 70%;}
+}
+/* 屏幕尺寸大于770px小于1025px */
+@media screen and (min-width:770px) and (max-width:1025px){
+    /* nav-style */
+    .nav{height: 6rem;padding: 0 3rem;}
+    .nav .logo{width:5rem;height:6rem;background-size: 75%;}
+}
+/* 屏幕尺寸大于1025px */
+@media screen and (min-width:1025px){
+    .nav{height: 7rem;padding: 0 6rem;}
+    .nav .logo{width:6rem;height:7rem;background-size: 75%;}
+}
+
