@@ -6,15 +6,27 @@ body{background-color: rgba(250,250,250,1);}
 li{list-style: none;display:inline-block;}
 a{text-decoration:none;color:#959a9b;}
 a:hover{color:#000;}
+.none{display: none;}
 
 /* nav */
 .nav{display: flex;display: -webkit-flex;justify-content:space-between;align-items: center;}
+/* nav logo */
 .nav .logo{position: relative;background-image:url(../images/header-logo.png);background-size:80%;background-position: center;background-repeat:no-repeat;}
 .nav .logo h1{position: absolute;left:-9999px;}
+/* nav navbar */
 .nav .navbar ul{display: -webkit-flex;display: flex;width:24rem;justify-content: space-between;}
 .nav .navbar ul li a{font-size: 1.6rem;}
-
-
+/* nav ctrlbar */
+.nav .ctrlbar{width:10rem;display: -webkit-flex;display:flex;justify-content: space-between;}
+.nav .ctrlbar .translation,.nav .ctrlbar .news,.nav .ctrlbar .personal_center{cursor: pointer;}
+.nav .ctrlbar .news>i,.nav .personal_center>i{font-size:30px;line-height:30px;color: rgba(9, 66, 112, 1);}
+.nav .ctrlbar  i:hover, .nav .ctrlbar .translation:hover{color:rgba(93, 197, 203,1);border-color: rgba(93, 197, 203, 1)}
+.nav .ctrlbar .translation{width: 1.8rem;height:1.8rem;border-radius:1.8rem;border:2px solid rgba(9, 66, 112, 1);text-align:center;line-height:1.8rem;font-size:1.5rem;}
+.nav .ctrlbar .news{width:2rem;height: 2rem;position: relative;}
+.nav .ctrlbar .news .tip{display: block;position: absolute;top:-8px;right:-8px;width:14px;height:14px;border-radius:14px;text-align:center;line-height:14px;color:#fff;;background:red;}
+.nav .ctrlbar .personal_center{position:relative;width: 2.3rem;height:2.3rem;border-radius:2.3rem;background-image:url(../images/avatar.png);background-position: center;}
+.nav .ctrlbar .personal_center .drop_down_menu ul{position: absolute;top:3.3rem;left:-3rem;display: -webkit-flex;display: flex;flex-wrap: wrap;box-sizing: border-box;width: 8rem;height:6rem;padding:5px 0 0 1rem;background:#ccc;}
+.nav .ctrlbar .personal_center .drop_down_menu ul::before{position: absolute;left:5px;top:0;content: '';border-left:50px solid transparent;border-right:50px solid transparent;border-bottom: 10px solid #fff;}
 /* 屏幕尺寸小于415px */
 @media screen and (max-width:415px){
     .nav{display: none;}
